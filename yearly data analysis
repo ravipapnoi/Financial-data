@@ -1,17 +1,11 @@
-financial-dashboard/
-│
+/
 ├── index.html
+├── data/
+│   └── Internal Financial Reporting.xlsx
 ├── assets/
 │   ├── css/
 │   │   └── dashboard.css
-│   ├── js/
-│   │   ├── data-loader.js
-│   │   ├── analytics.js
-│   │   ├── forecasting.js
-│   │   └── dashboard.js
-│   └── libs/
-│
-├── data/
-│   └── Internal Financial Reporting.xlsx
-│
-└── README.md
+│   └── js/
+│       ├── dashboard.js
+│       ├── analytics.js
+│       └── forecasting.js
