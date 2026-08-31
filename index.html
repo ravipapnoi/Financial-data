@@ -1,10 +1,85 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 </head>
+
 <body>
-    Dashboard coming soon...
+
+<header class="header">
+    <div>
+        <h1>Financial Dashboard</h1>
+        <p>Internal Reporting & Forecasting</p>
+    </div>
+
+    <button id="themeToggle">
+        Toggle Theme
+    </button>
+</header>
+
+<section class="kpi-section">
+
+    <div class="kpi-card">
+        <h3>Total Revenue</h3>
+        <p id="revenueKPI">₹ --</p>
+    </div>
+
+    <div class="kpi-card">
+        <h3>Gross Profit</h3>
+        <p id="grossProfitKPI">₹ --</p>
+    </div>
+
+    <div class="kpi-card">
+        <h3>Gross Margin</h3>
+        <p id="grossMarginKPI">-- %</p>
+    </div>
+
+    <div class="kpi-card">
+        <h3>Bookings</h3>
+        <p id="bookingsKPI">--</p>
+    </div>
+
+</section>
+
+<section class="dashboard-grid">
+
+    <div class="card">
+        <h2>Revenue Trend</h2>
+        <div id="revenueChart" class="chart"></div>
+    </div>
+
+    <div class="card">
+        <h2>Margin Trend</h2>
+        <div id="marginChart" class="chart"></div>
+    </div>
+
+    <div class="card">
+        <h2>Next Quarter Forecast</h2>
+        <div id="forecastChart" class="chart"></div>
+    </div>
+
+    <div class="card">
+        <h2>AI Insights</h2>
+
+        <div id="insightsPanel">
+
+            <ul>
+                <li>Loading insights...</li>
+            </ul>
+
+        </div>
+    </div>
+
+</section>
+
+<script src="assets/js/app.js"></script>
+
 </body>
 </html>
